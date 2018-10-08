@@ -1,6 +1,6 @@
 import logging
 
-from handlers import greet_user, get_planet, send_cat_picture, talk_to_me
+from handlers import *
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, RegexHandler
 
 import settings
@@ -20,6 +20,10 @@ def main():
     dp.add_handler(CommandHandler("start", greet_user, pass_user_data=True))
     dp.add_handler(CommandHandler("ephem", get_planet, pass_user_data=True))
     dp.add_handler(CommandHandler("cat", send_cat_picture, pass_user_data=True))
+    dp.add_handler(RegexHandler('^(Прислать котика)$', send_cat_picture, pass_user_data=True))
+    dp.add_handler(RegexHandler('^(Сменить аватарку)$', change_avatar, pass_user_data=True))
+    dp.add_handler(MessageHandler(Filters.contact, get_contact, pass_user_data=True))
+    dp.add_handler(MessageHandler(Filters.location, get_location, pass_user_data=True))
     dp.add_handler(MessageHandler(Filters.text, talk_to_me, pass_user_data=True))
 
     mybot.start_polling()
