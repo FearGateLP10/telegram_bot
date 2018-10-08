@@ -1,7 +1,7 @@
 Telegram-bot
 ============
 
-Telegram-bot создан и модифицируется в течение обучения в Learn`Python`_ .
+Telegram-bot создан и модифицируется в течение обучения в `Learn Python`_ .
 На данный момент реализован следующий функцонал:
 приветствие, получение фото котиков при запросе, ephem, эхо-ответ на любые текстовые сообщения.
 
@@ -26,4 +26,4 @@ A Simple Example
 
 ***
 
-.. _Python: https://learn.python.ru/
+.. _Learn Python: https://learn.python.ru/
