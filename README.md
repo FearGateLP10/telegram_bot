@@ -24,4 +24,6 @@ A Simple Example
 	/ephem Mars
 	Hi!
 
+***
+
 .. _Learn Python: https://learn.python.ru/
