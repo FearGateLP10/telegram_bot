@@ -47,6 +47,4 @@ Telegram-bot создан и модифицируется в течение об
 	/ephem Mars
 	Hi!
 
-***
-
 .. _Learn Python: https://learn.python.ru/
