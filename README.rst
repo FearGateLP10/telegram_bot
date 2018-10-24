@@ -38,13 +38,4 @@ Telegram-bot создан и модифицируется в течение об
 
     python3 bot.py
 
-Пример
-------
-
-.. code-block:: text
-	/start
-	/cat
-	/ephem Mars
-	Hi!
-
 .. _Learn Python: https://learn.python.ru/

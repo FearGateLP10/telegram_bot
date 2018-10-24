@@ -48,6 +48,13 @@ def send_cat_picture(bot, update, user_data):
     bot.send_photo(chat_id=update.message.chat.id, photo=open(cat_pic, 'rb'))
 
 
+def send_camera_frame(bot, update, user_data):
+    update.message.reply_text('фото_кадра', reply_markup=get_keyboard())
+    frame_list = glob('gray.jpg')
+    frame = choice(frame_list)
+    bot.send_photo(chat_id=update.message.chat.id, photo=open(frame, 'rb'))
+
+
 def change_avatar(bot, update, user_data):
     if 'emo' in user_data:
         del user_data['emo']
